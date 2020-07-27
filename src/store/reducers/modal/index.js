@@ -1,8 +1,6 @@
 import * as types from '../../constants';
 const initialState = {
-    modal: {
-        inputValue: "",
-    }
+    inputValue: "You have not yet registered information in the Modal",
 };
 
 const modalReducer = (state = initialState, action) => {
@@ -11,10 +9,7 @@ const modalReducer = (state = initialState, action) => {
         case types.MODAL.ACTION_UPDATE_CONTENT:
             return {
                 ...state,
-                modal: {
-                    ...state.modal,
-                    inputValue: payload.inputValue,
-                }
+                inputValue: payload.inputValue,
             };
         default:
             return state;

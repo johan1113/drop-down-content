@@ -1,10 +1,8 @@
 import * as types from '../../constants';
 const initialState = {
-    dropDownContent: {
-        on: false,
-        type: "none",
-        id: 0
-    }
+    on: false,
+    type: "none",
+    id: "none"
 };
 
 const dropDownContentReducer = (state = initialState, action) => {
@@ -13,16 +11,17 @@ const dropDownContentReducer = (state = initialState, action) => {
         case types.DROP_DOWN_CONTENT.ACTION_UPDATE_STATE:
             return {
                 ...state,
-                dropDownContent: {
-                    ...state.dropDownContent,
-                    on: payload.on,
-                    type: payload.type,
-                    id: payload.id,
-                }
+                on: payload.on,
+                type: payload.type,
+                id: payload.id,
             };
+
         default:
             return state;
     }
+
+    console.log("Hizo el Cambio del state");
+    console.log(state);
 };
 
 export default dropDownContentReducer;

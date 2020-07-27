@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from 'redux';
-import dropDownContentReducer from './reducers/drop-down-content';
+import dropDownContentReducer from './reducers/dropdownContent';
 import modalReducer from './reducers/modal';
 
 const reducer = combineReducers({
