@@ -10,7 +10,7 @@ const Home = () => {
             </header>
             <section className="Home__selection">
                 <div className="Home__selection__container" id="modal">
-                    <a className="Home__selection__container__item">MODAL</a>
+                    <a href="modal" className="Home__selection__container__item">MODAL</a>
                 </div>
                 <div className="Home__selection__container" id="pop-up">
                     <a className="Home__selection__container__item">POP UP</a>

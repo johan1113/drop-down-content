@@ -1,0 +1,7 @@
+export const DROP_DOWN_CONTENT = {
+    ACTION_UPDATE_STATE: 'ACTION_UPDATE_STATE'
+  };
+  
+  export const MODAL = {
+    ACTION_UPDATE_CONTENT: 'ACTION_UPDATE_CONTENT'
+  };
