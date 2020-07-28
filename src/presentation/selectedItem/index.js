@@ -2,15 +2,14 @@ import React from 'react';
 import './SelectedItem.scss';
 import imgModal from '../../assets/drop-down-content-resources/Modal.jpg';
 
-const SelectedItem = ({ displayInputValue, actionUpdateState}) => {
+const SelectedItem = ({ displayInputValue, actionOnModal}) => {
 
     const handleModal = () => {
         const obj ={
-            on: true,
             type: "modal",
             id: "input-text",
         }
-        actionUpdateState(obj);
+        actionOnModal(obj);
     }
 
 

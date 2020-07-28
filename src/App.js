@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Home from './presentation/home';
 import SelectedItem from './store/containers/SelectedItem';
+import DropDownContent from './store/containers/DropDownContent';
 import './App.scss';
 import store from './store';
 
@@ -11,6 +12,7 @@ function App() {
     <Provider store={store}>
       <Router>
         <div className="App">
+          {/* <DropDownContent/>*/}
           <Redirect
             from="/"
             to="/home" />

@@ -1,8 +1,9 @@
-import dropDownContent from './dropdownContent';
+import { dropDownContentOff, dropDownContentOn } from './dropdownContent';
 import modal from './modal';
 
 const emmit = {
-    dropDownContent,
+    dropDownContentOff,
+    dropDownContentOn,
     modal,
 };
 

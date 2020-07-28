@@ -7,7 +7,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    actionUpdateState: () => dispatch(emmit.dropDownContent.actionUpdateState()),
+    actionOnModal: (payload) => dispatch(emmit.dropDownContentOn(payload)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SelectedItemView);

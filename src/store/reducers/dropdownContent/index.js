@@ -1,19 +1,24 @@
 import * as types from '../../constants';
 const initialState = {
     on: false,
-    type: "none",
-    id: "none"
+    type: null,
+    id: null
 };
 
 const dropDownContentReducer = (state = initialState, action) => {
     const { type, payload } = action;
     switch (type) {
-        case types.DROP_DOWN_CONTENT.ACTION_UPDATE_STATE:
+        case types.DROP_DOWN_CONTENT.ACTION_UPDATE_STATE_ON:
             return {
                 ...state,
-                on: payload.on,
+                on: true,
                 type: payload.type,
                 id: payload.id,
+            };
+        case types.DROP_DOWN_CONTENT.ACTION_UPDATE_STATE_OFF:
+            return {
+                ...state,
+                initialState
             };
 
         default:
