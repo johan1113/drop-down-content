@@ -9,7 +9,7 @@ const modalReducer = (state = initialState, action) => {
         case types.MODAL.ACTION_UPDATE_CONTENT:
             return {
                 ...state,
-                inputValue: payload.inputValue,
+                inputValue: payload,
             };
         default:
             return state;

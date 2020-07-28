@@ -1,8 +1,6 @@
 import * as types from '../../constants';
 
-const actionUpdateContent = (value) => ({
+export const updateTextValue = (value) => ({
     type: types.MODAL.ACTION_UPDATE_CONTENT,
     payload: value,
 });
-
-export default actionUpdateContent;

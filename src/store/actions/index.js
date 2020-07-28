@@ -1,10 +1,10 @@
 import { dropDownContentOff, dropDownContentOn } from './dropdownContent';
-import modal from './modal';
+import { updateTextValue } from './modal';
 
 const emmit = {
     dropDownContentOff,
     dropDownContentOn,
-    modal,
+    updateTextValue,
 };
 
 export default emmit;

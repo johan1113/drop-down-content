@@ -12,7 +12,6 @@ const SelectedItem = ({ displayInputValue, actionOnModal}) => {
         actionOnModal(obj);
     }
 
-
     return (
         <main className="SelectedItem">
             <header className="SelectedItem__header">

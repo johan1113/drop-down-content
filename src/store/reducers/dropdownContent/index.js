@@ -18,7 +18,9 @@ const dropDownContentReducer = (state = initialState, action) => {
         case types.DROP_DOWN_CONTENT.ACTION_UPDATE_STATE_OFF:
             return {
                 ...state,
-                initialState
+                on: false,
+                type: payload.type,
+                id: payload.id,
             };
 
         default:

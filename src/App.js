@@ -12,7 +12,7 @@ function App() {
     <Provider store={store}>
       <Router>
         <div className="App">
-          {/* <DropDownContent/>*/}
+          <DropDownContent/>
           <Redirect
             from="/"
             to="/home" />
